@@ -1,0 +1,137 @@
+.container {
+  height: 86.2vh;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.feedcontainer {
+  flex: 0.4;
+  padding-top: 30px;
+  height: inherit;
+}
+
+.stories {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  background-color: white;
+  overflow: auto;
+  padding-left: 8px;
+  border: solid rgba(214, 214, 214, 0.637) thin;
+}
+.stories::-webkit-scrollbar {
+  display: none;
+}
+.posts {
+  width: 40.6vw;
+  background-color: transparent;
+  overflow: auto;
+}
+.rightinfo {
+  opacity: 90%;
+  flex: 0.2;
+  top: 40px;
+  position: sticky !important;
+  background-color: transparent;
+}
+
+.switchuser,
+.suggested,
+.switchuser > div,
+.suggested > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 8px 5px 8px;
+}
+.currentuser > h4,
+.currentuser > h5 {
+  margin: 0;
+  margin-left: 10px;
+}
+.currentuser > h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.currentuser > h5 {
+  margin-top: -4px !important;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(77, 77, 77, 0.856);
+}
+#a {
+  height: 53px;
+  width: 53px;
+  border: white solid;
+}
+
+.switchuser > button,
+.suggested > button,
+.suggestions > div > button {
+  color: rgb(0, 119, 255);
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.suggestions {
+  display: flex;
+  flex-direction: column;
+  max-height: 40vh;
+  padding: 7px;
+  overflow: hidden;
+  padding: 0;
+}
+.suggestions > div > h4 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 14.5px;
+  font-weight: 480;
+  margin-left: 10px;
+}
+.suggestions > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.suggested > div > #a {
+  height: 30px;
+  width: 30px;
+}
+#fo {
+  font-size: 12px;
+  margin-top: 0.2px !important;
+  color: rgba(56, 56, 56, 0.466);
+}
+.extra ,.extra>ul>p{
+  padding: 0 20px 0 20px;
+  width: 100%;
+  font-size: 10px;
+  color: rgba(65, 65, 65, 0.781);
+  opacity: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+  .rightinfo{
+    display: none;
+  }
+  
+}
+@media  screen and (max-width:900px ) and (min-width:600px) {
+  .stories,.posts{
+    
+    width: 60vw;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .stories,.posts{
+    width: 84vw ;
+  }
+  .searchcontainer{
+    display: none;
+  }
+}

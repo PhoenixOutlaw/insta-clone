@@ -1,0 +1,92 @@
+.fpcontainer {
+  background-color: transparent;
+  color: transparent;
+  position: absolute;
+  top: 7%;
+  left: 0;
+  height: 90%;
+  width: 100%;
+}
+
+#close {
+  position: absolute;
+  z-index: 10000;
+  top: 2%;
+  right: 7%;
+  height: 31px;
+  width: 31px;
+  color: white;
+  cursor: pointer;
+}
+.fullpost {
+  position: absolute;
+  background-color: white;
+  top: 10%;
+  z-index: 1000;
+  height: 80%;
+  width: 60%;
+  box-shadow: 0 0 0 700vh rgba(0, 0, 0, 0.479);
+  display: flex;
+  flex-direction: row;
+}
+.currentpost {
+  flex: 0.69;
+  display: flex;
+  border-right: whitesmoke solid;
+}
+.currentpost > img {
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+.sidecomments {
+  flex: .31;
+  border: green solid;
+  max-width: 31%;
+
+}
+.fpc {
+  display: flex;
+  flex-direction: column;
+  border: rgb(255, 0, 242) solid thick;
+  height: 82%;
+}
+.scomment {
+  max-width: 100%;
+  display: flex;
+  border: solid gray;
+  align-items: baseline;
+}
+.scomment > div:first-child {
+  display: flex;
+  align-items: center;
+  flex: 20%;
+  overflow: hidden;
+  border: green solid;
+}
+#sca {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+.scomment > div > h5 {
+  margin: 0;
+  margin-right: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .cm{
+    flex: 50%;
+    border: rgb(255, 0, 0) solid ;
+    overflow:hidden;
+    
+  }
+  .cm > p {
+    overflow:hidden;
+    max-width: 100%;
+    margin: 0;
+    text-overflow: ellipsis;
+  }
+  

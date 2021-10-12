@@ -1,0 +1,190 @@
+.profilecontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.profileinfo{
+    margin-top: 30px ;
+    flex: .9;
+}
+.infoh{
+    display: flex;
+    padding-left: 20vw;
+}
+#pa{
+    top: 15px;
+    height:170px;
+    width: 170px;
+}
+.userp{
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: rgba(0, 0, 0, 0.623);
+}
+.p1{
+    display: flex;
+    width: 400px;
+    align-items:center;
+    justify-content:space-around;
+
+}
+.p1>.MuiSvgIcon-root{
+    margin-left: 15px;
+}
+.p1>button,#btnext{
+    cursor: pointer;
+    border: thin rgba(0, 0, 0, 0.144) solid;
+    width: 108px;
+    border-radius:5px;
+    background-color:white;
+    outline: none;
+    padding: 5px 6px 5px 6px;
+    cursor: pointer;
+
+}
+#btnext{
+    display: none;
+    border: thin rgba(0, 0, 0, 0.144) solid;
+    margin-top:20px;
+    padding: 5px 0 5px 0;
+    border-radius:5px;
+    background-color:white;
+    outline: none;
+    width:30vw;
+
+}
+
+.p1>h5{
+    margin: 0 ;
+    font-size:33px;
+    font-weight:100;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    margin-right: 15px;
+}
+.bio>h4{
+    margin: 0 ;
+    margin-bottom:5px;
+    font-size:14px;
+    font-weight:500;
+    color: black;
+}
+.profilecontent{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    margin-top:20px;
+}
+.profilecontent>h3{
+    margin: 0;
+    font-size:13px;
+    font-weight: 500;
+    color: black;
+}
+.bio{
+    margin-top: 12px;
+    width:100%;
+    color: black;
+}
+.bio>p{
+    margin: 0;
+    font-size:13px;
+    text-overflow:break-word;
+    word-break:break-all ;
+}
+.highlights{
+    margin-top: 16px;
+    display: flex;
+    width:70vw;
+    margin-left: 12vw;
+    overflow: auto;
+
+}
+.pmopt{
+    display: flex;
+    justify-content: center;
+}
+.pmopt>div{
+    display: flex;
+}
+.hopt{
+    display: flex;
+    padding: 8px 40px 8px 40px;
+    align-items: center;
+}
+.hopt:hover{
+    box-shadow: 0px -1px 0 rgb(0, 0, 0);
+
+}
+.hopt>.MuiSvgIcon-root{
+    opacity: 50%;
+    color: rgb(0, 0, 0);
+    width:  20px;
+    height: 20px;
+}
+.hopt>h4{
+    margin: 0;
+    margin-left: 5px;
+    font-weight: 490;
+    box-sizing: border-box !important;
+}
+.profilemedia{
+    display: flex;
+    flex-direction: column;
+    border-top: rgba(151, 151, 151, 0.301) solid thin;
+}
+.userspost{
+    align-self: center;
+    margin-top: 16px;
+    width:90%;
+    background-color:transparent;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.userspost>img{
+    width:100%;
+    border: rgba(0, 0, 0, 0.062) solid thin;
+}
+/* //////////////////////////// */
+@media screen and (max-width:960px) {
+    .p1>button{display: none;}
+    #btnext{
+        display:unset;
+        width:100%
+    }
+    #pa{
+        position: relative;
+        top: 35px;
+        height:160px;
+        width: 160px;
+    }
+    .infoh{
+        padding-left: 2vw;
+    }
+    #hava{
+        height: 60px !important;
+        width:  60px !important;
+    }
+    .highlights,.profilemedia{
+        margin-left:1vw;
+        margin-right:1vw;
+    }
+    
+}
+@media screen and (max-width:600px){
+    .hopt{
+        padding:20px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .userspost{
+        grid-gap:5px !important;
+        width: 97% !important;
+
+    }
+    
+}

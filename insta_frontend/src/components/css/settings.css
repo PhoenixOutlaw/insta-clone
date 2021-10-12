@@ -1,0 +1,44 @@
+.settings{
+    margin-top:25px;
+    display: flex;
+
+}
+.leftnav{
+    flex: 0.25;
+    display:flex;
+    flex-direction: column;
+    border: rgba(0, 0, 0, 0.164)  solid thin;
+    
+}
+.leftnav>h4{
+    width:87%;
+    margin: 0;
+    padding: 15px 0 15px 29px;
+    color: rgba(0, 0, 0, 0.568);
+    font-weight: 500;
+    text-overflow: break-word;
+    cursor: pointer;
+}
+#prac{
+    
+    font-weight: 600;
+    color: rgb(0, 153, 255);
+}   
+.selectednav{
+    color: black !important;
+    box-shadow: -1px 0 0 0 black; 
+}
+.leftnav>div{
+    margin-top: 100px;
+    width: 100%;
+    box-shadow: -10px 0 0 0 black ; 
+    
+} 
+.leftnav>h4:hover,.leftnav>h3:hover{
+    box-shadow: -1px 0 0 0 rgba(0, 0, 0, 0.582); 
+    background-color:whitesmoke;
+}
+.navcontent{
+    flex: 0.75;
+    border: rgba(0, 0, 0, 0.164)  solid thin;
+}

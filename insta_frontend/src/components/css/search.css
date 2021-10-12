@@ -1,0 +1,35 @@
+#scha{
+    height:28px;
+    width: 28px;
+}
+.searchbox{
+    padding: 16px 0 2px 0;
+    background-color:rgb(243, 243, 243);
+    border: rgba(0, 0, 0, 0.096) solid thin;
+    border-top: none ;
+    position:absolute;
+    width:237px; 
+    max-height:150px;
+    display: flex;
+    flex-direction:column;
+    justify-content:left;
+    overflow: auto;
+    cursor: pointer;
+    z-index: 9999;
+}
+.searchbox::-webkit-scrollbar {
+    display: none;
+  }
+  
+.usersearch{
+    padding: 6px 5px 6px 25px;
+    display:flex;
+    align-items:center;
+}
+.usersearch:hover{
+    background-color: white;
+}
+.usersearch>h6{
+    margin: 0;
+    margin-left: 10px;
+}
